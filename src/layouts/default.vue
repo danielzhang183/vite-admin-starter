@@ -1,7 +1,17 @@
+<script setup lang="ts">
+const ui = useUiStore()
+</script>
+
 <template>
-  <TheNav />
-  <main class="px-4 py-10 text-center text-base">
-    <RouterView />
-    <!-- <Footer /> -->
-  </main>
+  <div
+    class="box-border h-full w-full overflow-hidden"
+    :style="{ paddingLeft: ui.asidePadding }"
+  >
+    <TheAside />
+    <main class="h-full w-full">
+      <TheNav />
+      <RouterView />
+      <!-- <Footer /> -->
+    </main>
+  </div>
 </template>

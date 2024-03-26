@@ -11,18 +11,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div>
-    <div text-4xl>
-      <div i-carbon-campsite inline-block />
-    </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/danielzhang183/vite-admin-starter" target="_blank">
-        Vite Starter
-      </a>
-    </p>
-
-    <div py-4 />
-
+  <div pt-10 text-center>
     <input
       id="input"
       v-model="name"

@@ -7,6 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AsideMenu: typeof import('./components/aside/AsideMenu.vue')['default']
+    AsideMenuContainer: typeof import('./components/aside/AsideMenuContainer.vue')['default']
+    AsideMenuItem: typeof import('./components/aside/AsideMenuItem.vue')['default']
+    AsideSubMenu: typeof import('./components/aside/AsideSubMenu.vue')['default']
+    AsideTitle: typeof import('./components/aside/AsideTitle.vue')['default']
     CommandItem: typeof import('./components/command/CommandItem.vue')['default']
     CommandKey: typeof import('./components/command/CommandKey.vue')['default']
     CommandPanel: typeof import('./components/command/CommandPanel.vue')['default']
@@ -14,11 +19,16 @@ declare module 'vue' {
     Footer: typeof import('./components/Footer.vue')['default']
     ModalContainer: typeof import('./components/modal/ModalContainer.vue')['default']
     ModalDialog: typeof import('./components/modal/ModalDialog.vue')['default']
+    NavTabItem: typeof import('./components/nav/NavTabItem.vue')['default']
+    NavTabs: typeof import('./components/nav/NavTabs.vue')['default']
+    NavTitle: typeof import('./components/nav/NavTitle.vue')['default']
+    NavUser: typeof import('./components/nav/NavUser.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SettingsBuildInfo: typeof import('./components/settings/SettingsBuildInfo.vue')['default']
     SettingsScreenFull: typeof import('./components/settings/SettingsScreenFull.vue')['default']
     SettingsThemeColors: typeof import('./components/settings/SettingsThemeColors.vue')['default']
+    TheAside: typeof import('./components/aside/TheAside.vue')['default']
     TheNav: typeof import('./components/nav/TheNav.vue')['default']
   }
 }
